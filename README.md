@@ -1,4 +1,13 @@
-# Simple_Calculator
+# Simple_Calculator- calculator.py is the main file
+The rest of the .py files are modules.
+
+The calculator unfortunately does not take fraction values so try to convert your fractions into decimals
+before using the calculator. (You could also convert the fractions to decimals through the simple calculator.)
+
+The calculator takes two numbers, with an operator as well. (+, -, *, /, or ^)
+
+This calculator can also process negative numbers.
+
 
 https://www.tutorialspoint.com/basic-calculator-program-using-java
 I got the idea from this website.
@@ -16,12 +25,3 @@ Changes made:
 8. Added while loops, user can restart
 9. Added try except but implementing while loops
 10. Added more functions
-
-Welcome to the simple calculator.
-
-The calculator unfortunately does not take fraction values so try to convert your fractions into decimals
-before using the calculator. (You could also convert the fractions to decimals through the simple calculator.)
-
-The calculator takes two numbers, with an operator as well. (+, -, *, /, or ^)
-
-This calculator can also process negative numbers.
