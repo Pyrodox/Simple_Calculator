@@ -15,7 +15,7 @@ Changes made:
 7. Added classes + inheritance
 8. Added while loops, user can restart
 9. Added try except but implementing while loops
-10.Added more functions
+10. Added more functions
 
 Welcome to the simple calculator.
 
