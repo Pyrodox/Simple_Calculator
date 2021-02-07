@@ -1,34 +1,34 @@
-try:
-    print("Don't enter fractions. ")
+from Calculate.DefiningParts import firstnum, sign, secondnum
+from Calculate.Calculate import Adding, Subtracting, Multiplying, Dividing, Exponent
+from Shift15.Restart_Function import confirm_restart
 
-    a = float(input("Type a number and press enter: "))
-    b = input("Type either +, -, *, /, or ^: ")
-    c = float(input("Type another number and press enter: "))
-    result = str(0)
+print("Don't enter fractions. ")
 
-    def calculator(first, sign, second):
-        if "+" == sign:
-            result = first + second
-        elif "-" == sign:
-            result = first - second
-        elif "*" == sign:
-            result = first - second
-        elif "/" == sign:
-            result = first / second
-        elif "^" == sign:
-            result = first ** second
-        else:
-            result = str("Not a valid mathematical equation. Try again.")
-        return result
+while True:
+    def result_of(first, operator, second):
+        if operator == "+":
+            calculate_by = Adding(first, second)
+            return calculate_by.adding()
 
+        elif operator == "-":
+            calculate_by = Subtracting(first, second)
+            return calculate_by.subtracting()
 
-    if isinstance(result, str):
-        print(calculator(a, b, c))
+        elif operator == "*":
+            calculate_by = Multiplying(first, second)
+            return calculate_by.multiplying()
+
+        elif operator == "/":
+            calculate_by = Dividing(first, second)
+            return calculate_by.dividing()
+
+        elif operator == "^":
+            calculate_by = Exponent(first, second)
+            return calculate_by.exponent()
+
+    print(result_of(firstnum(), sign(), secondnum()))
+
+    if confirm_restart() == "yes":
+        continue
     else:
-        print("Your answer is:", calculator(a, b, c))
-
-
-except ValueError:
-    print("The calculator has been stopped; please enter a valid input.")
-except ZeroDivisionError:
-    print("Undefined")
+        break
