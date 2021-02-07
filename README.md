@@ -10,7 +10,12 @@ Changes made:
 2. Originally I coded it in Java, converted it to Python by learning if/else 
 3. Learnt functions and exceptions so I modded my old calculator to use those
 4. Another if else operator added
-5. Added parameters in my function 
+5. Added parameters in my function
+6. Added modules
+7. Added classes + inheritance
+8. Added while loops, user can restart
+9. Added try except but implementing while loops
+10.Added more functions
 
 Welcome to the simple calculator.
 
