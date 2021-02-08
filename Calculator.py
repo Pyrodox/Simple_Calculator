@@ -6,18 +6,17 @@ print("Don't enter fractions. ")
 
 while True:
     while True:
+        a = usernums()
+        b = sign()
+        c = usernums()
+
+        calculate_by = SetNums(a, c)
+        operations = {"+": calculate_by.adding, "-": calculate_by.subtracting, "*": calculate_by.multiplying,
+                      "/": calculate_by.dividing, "^": calculate_by.exponent}
+
         try:
-            a = usernums()
-            b = sign()
-            c = usernums()
-
-            calculate_by = SetNums(a, c)
-            operations = {"+": calculate_by.adding, "-": calculate_by.subtracting, "*": calculate_by.multiplying,
-                          "/": calculate_by.dividing, "^": calculate_by.exponent}
-
             print(operations.get(b)())
             break
-
         except ZeroDivisionError:
             print("Please try again.")
 
