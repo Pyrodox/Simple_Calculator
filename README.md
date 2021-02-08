@@ -1,4 +1,4 @@
-# Simple_Calculator- calculator.py is the main file
+# Simple_Calculator- Calculator.py is the main file
 The rest of the .py files are modules.
 
 The calculator unfortunately does not take fraction values so try to convert your fractions into decimals
