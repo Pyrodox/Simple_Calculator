@@ -21,7 +21,7 @@ Changes made:
 4. Another if else operator added
 5. Added parameters in my function
 6. Added modules
-7. Added classes + inheritance
+7. Added class
 8. Added while loops, user can restart
 9. Added try except but implementing while loops
 10. Added more functions
