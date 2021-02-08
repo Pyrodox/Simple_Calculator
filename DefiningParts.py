@@ -1,11 +1,11 @@
-def firstnum():
+def usernums():
     while True:
         try:
-            first_num = float(input("Type a number and press enter: "))
+            user_num = float(input("Enter a number: "))
             break
         except ValueError:
             print("Please try again.")
-    return first_num
+    return user_num
 
 
 def sign():
@@ -18,13 +18,3 @@ def sign():
         else:
             break
     return operator_sign1
-
-
-def secondnum():
-    while True:
-        try:
-            second_num = float(input("Type another number and press enter: "))
-            break
-        except ValueError:
-            print("Please try again.")
-    return second_num
