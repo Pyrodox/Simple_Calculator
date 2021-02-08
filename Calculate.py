@@ -20,7 +20,7 @@ class SetNums:
             result = self.first / self.second
             return result
         except ZeroDivisionError:
-            print("Please try again.")
+            return "Please try again."
 
     def exponent(self):
         result = self.first ** self.second
