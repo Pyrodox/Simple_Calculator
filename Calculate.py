@@ -5,23 +5,40 @@ class SetNums:
 
     def adding(self):
         result = self.first + self.second
-        return result
+        if result.is_integer():
+            result1 = int(result)
+            return result1
+        else:
+            return result
 
     def subtracting(self):
         result = self.first - self.second
-        return result
+        if result.is_integer():
+            result1 = int(result)
+            return result1
+        else:
+            return result
 
     def multiplying(self):
         result = self.first * self.second
-        return result
+        if result.is_integer():
+            result1 = int(result)
+            return result1
+        else:
+            return result
 
     def dividing(self):
-        try:
-            result = self.first / self.second
+        result = self.first / self.second
+        if result.is_integer():
+            result1 = int(result)
+            return result1
+        else:
             return result
-        except ZeroDivisionError:
-            return "Please try again."
 
     def exponent(self):
         result = self.first ** self.second
-        return result
+        if result.is_integer():
+            result1 = int(result)
+            return result1
+        else:
+            return result
