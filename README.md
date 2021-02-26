@@ -1,5 +1,5 @@
 # Simple_Calculator- Calculator.py is the main file
-The rest of the .py files are modules.
+Make sure to create an __init__.py file for the Restart_Function module.
 
 The calculator unfortunately does not take fraction values so try to convert your fractions into decimals
 before using the calculator. (You could also convert the fractions to decimals through the simple calculator.)
@@ -20,7 +20,7 @@ Changes made:
 3. Learnt functions and exceptions so I modded my old calculator to use those
 4. Another if else operator added
 5. Added parameters in my function
-6. Added modules
+6. Added module
 7. Added class
 8. Added while loops, user can restart
 9. Added try except but implementing while loops
